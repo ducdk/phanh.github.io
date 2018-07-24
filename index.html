@@ -18,11 +18,12 @@
     <!-- load cubeportfolio css file -->
     <link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.min.css">
     <link rel="stylesheet" type="text/css" href="css/csshake.min.css">
-
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- load latest jquery from google resources-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 
     <!-- load cubeportfolio jQuery plugin -->
     <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
@@ -30,8 +31,8 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-white bg-white">
-        <a class="navbar-brand" href="#">
-            <img src="images/porfolio/logo-01.png" alt="" class="shake-freeze shake-opacity">
+        <a class="navbar-brand home header-show " href="#">
+            <img src="images/porfolio/logo-01.png" alt="" class="shake-slow shake-constant shake-constant--hover w-20">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,31 +41,54 @@
         <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample04">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link home header-show" href="#">Home </a>
+                    <a class="nav-link" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link js-scroll-trigger" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Work</a>
+                    <a class="nav-link js-scroll-trigger" href="#work">Work</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog </a>
+                    <a class="nav-link js-scroll-trigger" href="#blogs">Blog </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link js-scroll-trigger" href="#form">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <section style="position: relative;overflow: hidden;">
+    <!-- <section style="position: relative;overflow: hidden;">
         <img src="images/porfolio/nen-01.png" class="img-fluid" alt="Background image">
         <img src="images/porfolio/unnamed.png" class="img1" alt="Background image">
         <img src="images/porfolio/Hello-01.png" class="img2" alt="Background image">
+    </section> -->
+
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <section style="position: relative;overflow: hidden;">
+                        <img src="images/porfolio/nen-01.png" class="img-fluid" alt="Background image">
+                        <img src="images/porfolio/unnamed.png" class="img1" alt="Background image">
+                        <img src="images/porfolio/Hello-01.png" class="img2" alt="Background image">
+                    </section>
+                </div>
+                <div class="carousel-item">
+                    <section style="position: relative;overflow: hidden;">
+                        <img src="images/porfolio/banner2-01.png" class="img-fluid" alt="Background image">
+                    </section>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="about w-50 m-auto">
+    <section class="about w-50 m-auto" id="about">
         <!-- <img src="images/porfolio/title_aboutme-01.png" class="w-50 m-auto" alt=""> -->
         <img src="images/porfolio/title_aboutme-01.png" class="rounded mx-auto d-block w-55" alt="">
         <p class="text-justify">Hello, My name is Phuong Anh Le, currently a graphic desginer in Hanoi, Vietnam. I am a designer and artist looking to combine the two fields through my works. Find out more through each project by clicking on the images below. And if you think
@@ -75,8 +99,8 @@
                 <div class="row">
                     <div class="col-6 mb-5">
                         <div class="media">
-                            <img class="mr-3 w-25" src="images/icon/flag.png" alt="Generic placeholder image">
-                            <div class="media-body">
+                            <img class="mr-3 w-25 hvr-grow" src="images/icon/flag.png" alt="Generic placeholder image">
+                            <div class="media-body hvr-grow">
                                 <h5 class="mt-0 mb-0 mt-4">Branding</h5>
                                 all products
                             </div>
@@ -84,8 +108,8 @@
                     </div>
                     <div class="col-6 mb-5">
                         <div class="media">
-                            <img class="mr-3 w-25" src="images/icon/paint-brush.png" alt="Generic placeholder image">
-                            <div class="media-body">
+                            <img class="mr-3 w-25 hvr-grow" src="images/icon/paint-brush.png" alt="Generic placeholder image">
+                            <div class="media-body hvr-grow">
                                 <h5 class="mt-0 mb-0 mt-4">Illustration</h5>
                                 all products
                             </div>
@@ -93,8 +117,8 @@
                     </div>
                     <div class="col-6 mb-5">
                         <div class="media">
-                            <img class="mr-3 w-25" src="images/icon/monitor.png" alt="Generic placeholder image">
-                            <div class="media-body">
+                            <img class="mr-3 w-25 hvr-grow" src="images/icon/monitor.png" alt="Generic placeholder image">
+                            <div class="media-body hvr-grow">
                                 <h5 class="mt-0 mb-0 mt-4">Designing</h5>
                                 graphic/website
                             </div>
@@ -102,8 +126,8 @@
                     </div>
                     <div class="col-6 mb-5">
                         <div class="media">
-                            <img class="mr-3 w-25" src="images/icon/open-book.png" alt="Generic placeholder image">
-                            <div class="media-body">
+                            <img class="mr-3 w-25 hvr-grow" src="images/icon/open-book.png" alt="Generic placeholder image">
+                            <div class="media-body hvr-grow">
                                 <h5 class="mt-0 mb-0 mt-4">Teaching</h5>
                                 English
                             </div>
@@ -114,7 +138,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="work">
         <img src="images/porfolio/title_work-01.png" class="rounded mx-auto d-block w-275" alt="">
         <div id="filters-container" class="mb-4 justify-content-center">
             <div data-filter="*" class="cbp-filter-item cbp-filter-item-active float-left item-f">All</div>
@@ -127,27 +151,27 @@
         <div class="container-fluid nopadding">
             <div id="grid-container" class="row">
                 <div class="cbp-item animation illustration">
-                    <img src="images/porfolio/minthouse_identity-01.png" alt="custom alt 1" width="100%">
+                    <img class="hvr-grow" src="images/porfolio/minthouse_identity-01.png" alt="custom alt 1" width="100%">
                     <p class="text-center"> Mint House Branding Identity</p>
                 </div>
                 <div class="cbp-item artwork">
-                    <img src="images/porfolio/minthouse_website-01.png" alt="custom alt 1" width="100%">
+                    <img class="hvr-grow" src="images/porfolio/minthouse_website-01.png" alt="custom alt 1" width="100%">
                     <p class="text-center"> Mint House website</p>
                 </div>
                 <div class="cbp-item animation artwork photography">
-                    <img src="images/porfolio/stayhomeenglish-01.png" alt="custom alt 1" width="100%">
+                    <img class="hvr-grow" src="images/porfolio/stayhomeenglish-01.png" alt="custom alt 1" width="100%">
                     <p class="text-center"> Mint House website</p>
                 </div>
                 <div class="cbp-item animation illustration">
-                    <img src="images/porfolio/paradis-01.png" alt="custom alt 1" width="100%">
+                    <img class="hvr-grow" src="images/porfolio/paradis-01.png" alt="custom alt 1" width="100%">
                     <p class="text-center"> Mint House website</p>
                 </div>
                 <div class="cbp-item artwork">
-                    <img src="images/porfolio/magazine-01.png" alt="custom alt 1" width="100%">
+                    <img class="hvr-grow" src="images/porfolio/magazine-01.png" alt="custom alt 1" width="100%">
                     <p class="text-center"> Mint House website</p>
                 </div>
                 <div class="cbp-item animation artwork photography">
-                    <img src="images/porfolio/urbanstreet-01.png" alt="custom alt 1" width="100%">
+                    <img class="hvr-grow" src="images/porfolio/urbanstreet-01.png" alt="custom alt 1" width="100%">
                     <p class="text-center"> Mint House website</p>
                 </div>
             </div>
@@ -165,14 +189,14 @@
 
     </section>
 
-    <section class="blogs">
+    <section class="blogs" id="blogs">
 
         <img src="images/porfolio/title_blog-01.png" class="rounded mx-auto d-block w-295" alt="">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-6">
                     <div class="card mb-3">
-                        <img class="card-img-top" src="images/porfolio/adventure2018-01.png" alt="Card image cap">
+                        <img class="card-img-top hvr-grow" src="images/porfolio/adventure2018-01.png" alt="Card image cap">
                         <div class="card-body">
                             <h2 class="card-title text-center">My New Adventures <br>in 2018</h2>
                             <p class="card-text font-italic card-bd">We are going to traveling to get inspired by all the wonderful things we will see, taste and smell, but also to get some work done. Working in a new and unknown environment often leads to new insights and we could both use
@@ -184,7 +208,7 @@
                 </div>
                 <div class="col-6">
                     <div class="card mb-3">
-                        <img class="card-img-top" src="images/porfolio/dreamlife-01.png" alt="Card image cap">
+                        <img class="card-img-top hvr-grow" src="images/porfolio/dreamlife-01.png" alt="Card image cap">
                         <div class="card-body">
                             <h2 class="card-title text-center">Take Action, Be Consistent <br> -Dream Life Series-</h2>
                             <p class="card-text font-italic card-bd">Don’t let your dreams stay dreams. It’s so important to take action and be consistent!....
@@ -196,7 +220,7 @@
                 </div>
                 <div class="col-6">
                     <div class="card mb-3">
-                        <img class="card-img-top" src="images/porfolio/airbnb-01.png" alt="Card image cap">
+                        <img class="card-img-top hvr-grow" src="images/porfolio/airbnb-01.png" alt="Card image cap">
                         <div class="card-body">
                             <h2 class="card-title text-center">Just a new experience:<br> Becoming a host on airbnb
                             </h2>
@@ -208,7 +232,7 @@
                 </div>
                 <div class="col-6">
                     <div class="card mb-3">
-                        <img class="card-img-top" src="images/porfolio/onlinebusiness-01.png" alt="Card image cap">
+                        <img class="card-img-top hvr-grow" src="images/porfolio/onlinebusiness-01.png" alt="Card image cap">
                         <div class="card-body">
                             <h2 class="card-title text-center">Building an Online <br> Freelance Bussiness </h2>
                             <p class="card-text font-italic card-bd">There’s a reason “Just start” is top advice for aspiring entrepreneurs. Often, what stops you from having that business of your dreams is just starting it...
@@ -251,9 +275,9 @@
         </div>
     </section>
 
-    <section>
+    <section class="footer">
         <div class="logo w-25 m-auto">
-            <img src="images/porfolio/logo-01.png" class="img-fluid shake-freeze shake-opacity" alt="">
+            <img src="images/porfolio/logo-01.png" class="img-fluid shake-slow shake-constant shake-constant--hover" alt="">
             <p class="if text-center">lephuonganh225@gmail.com</p>
             <p class="if text-center">0961231378</p>
             <nav id="paginate" class="w-25 m-auto" aria-label="Page navigation example">
@@ -331,23 +355,39 @@
         });
     </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
     <script>
         $(window).on('load', function() {
-            $('.img1').animate({
-                bottom: '-20%',
-            }, 1500);
-            $('.img2').animate({
-                opacity: 1,
-            }, 1000);
+
         })
         $(window).scroll(function(event) {
             var st = $(this).scrollTop();
             if (st > 25) {
                 $('.home').removeClass('header-show');
+                $('.navbar-brand > img').removeClass('w-20');
             } else {
+                $('.img1').animate({
+                    bottom: '-20%',
+                }, 1500);
+                $('.img2').animate({
+                    opacity: 1,
+                }, 1000);
                 $('.home').addClass('header-show');
+                $('.navbar-brand > img').addClass('w-20');
             }
         })
+        $('.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: (target.offset().top - 70)
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                }
+            }
+        });
     </script>
 </body>
 

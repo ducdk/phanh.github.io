@@ -40,8 +40,53 @@
     font-weight: 600;
 }
 
+.ab {
+    font-size: 97px;
+    font-family: amatic;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ab-1,
+.ab-2 {
+    font-size: 34px;
+    font-family: geagu;
+    text-align: center;
+    margin: 0;
+}
+
+.ab-2 {
+    margin-bottom: 35px;
+}
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.cont {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.img-cont {
+    width: 45%;
+}
+
+.t {
+    font-size: 21.8px;
+    font-family: Roboto;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    font-weight: 300;
+    padding-left: 15px;
+}
+
+.t1 {
+    font-size: 21.8px;
+    font-family: Roboto;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    font-weight: 300;
 }
 
 .about {
@@ -66,12 +111,14 @@
 }
 
 .img2 {
-    width: 35%;
+    width: 40%;
     position: absolute;
-    top: 25%;
+    top: 32%;
     right: 17%;
     opacity: 0;
 }
+
+.ab {}
 
 .abme {
     font-family: amatic;
@@ -148,6 +195,7 @@
     font-family: geagu;
     font-weight: 400;
     color: black;
+    cursor: pointer;
 }
 
 .card-bd {
@@ -163,8 +211,8 @@
 .card-title {
     color: #B4627E;
     font-family: geagu;
-    font-weight: 600;
-    font-size: 32px;
+    font-weight: 400;
+    font-size: 36px;
     height: 100px;
     letter-spacing: 4px;
 }
@@ -172,6 +220,10 @@
 #form {
     background: #F8D7E2;
     padding: 50px 0;
+}
+
+.footer {
+    margin-bottom: 100px;
 }
 
 .form-t {
@@ -213,7 +265,7 @@
 }
 
 .sub {
-    margin: 20px 28%;
+    margin: 20px 25%;
     background-color: transparent;
     color: black;
     box-shadow: none;
@@ -234,7 +286,7 @@
 
 .if {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
     font-family: geagu;
 }
@@ -265,4 +317,8 @@
     padding: 45vh 0;
     /* transform: translate3d(0, -50px, 0); */
     /* transition: transform 500ms 0ms ease, opacity 500ms 150ms ease, margin 0ms 500ms linear, padding 0ms 500ms linear; */
+}
+
+.w-20 {
+    width: 25%!important;
 }

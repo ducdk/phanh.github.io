@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Phanh</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!-- load cubeportfolio css file -->
+    <link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" type="text/css" href="css/csshake.min.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- load latest jquery from google resources-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- load cubeportfolio jQuery plugin -->
+    <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-white bg-white">
+        <a class="navbar-brand" href="#">
+            <img src="images/porfolio/logo-01.png" alt="" class="shake-freeze shake-opacity">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample04">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section style="position: relative;overflow: hidden;">
+        <img src="images/porfolio/me_banner-01.png" class="img-fluid" alt="Background image">
+    </section>
+
+    <section class="ob">
+        <p class="ab">about me</p>
+        <p class="ab-1">Hello, My name is Phuong Anh Le,</p>
+        <p class="ab-2">currently a graphic desginer in Hanoi, Vietnam.</p>
+        <div class="cont">
+            <div class="media">
+                <img class="mr-3 img-cont" src="images/porfolio/me2-01.png" alt="Generic placeholder image">
+                <div class="media-body">
+                    <p class="t">I’ll start in the middle where I’ve found myself learning to find the peace in every moment, and nurture my curiosity everyday through various forms of creation like our videos, e-book and newsletter. I ache for a sense of com- munity
+                        and aim to bring unity through compassion, good food and mindful movement. <br> In the beginning things looked very different. I’ve had to bend, twist and weave through not-so-happy times that were ruled by confusion, stagnancy,
+                        and the illusion of constant lack. I've been constantly on the move ever since I left my hometown in Costa Rica. In the end I hope to inspire you to pave your own path by sharing mine. <br> I am a 200-hour certified Vinyasa Yoga
+                        teacher and a 200-hour certified Ashtanga teacher. I am currently studying to become a certified Health Coach in order to help people feel supported, nourished and secure in their decisions when it comes to food.</p>
+
+                </div>
+            </div>
+            <p class="t1">I am a mentor at Designer Fund, an active advisor to several startups, and in 2012, Fast Company named me one of "fifty designers shaping the future of design." Previously, I was Principal Designer at Twitter, co-creator of 52 Weeks Of UX
+                & Ffffallback and the Director of User Experience for Socialcast, which was acquired by VMware in 2011. You can follow me on Twitter or contact me via email: lephuonganh225@gmail.com.</p>
+
+        </div>
+
+    </section>
+    <section class="w-25 m-auto">
+        <img src="images/porfolio/star.png" alt="" class="w-100" style="margin-bottom: 100px;margin-top: 50px;">
+    </section>
+    <section class="footer">
+        <div class="logo w-25 m-auto">
+            <img src="images/porfolio/logo-01.png" class="img-fluid shake-freeze shake-opacity" alt="">
+            <p class="if text-center">lephuonganh225@gmail.com</p>
+            <p class="if text-center">0961231378</p>
+            <nav id="paginate" class="w-25 m-auto" aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#"><img src="images/icon/pinterest.png" alt=""></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><img src="images/icon/behance.png" alt=""></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><img src="images/icon/instagram.png" alt=""></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><img src="images/icon/facebook.png" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        jQuery('#grid-container').cubeportfolio({
+            filters: '#filters-container',
+            loadMore: '#paginate',
+            loadMoreAction: 'click',
+            layoutMode: 'grid',
+            defaultFilter: '*',
+            animationType: 'quicksand',
+            gapHorizontal: 35,
+            gapVertical: 30,
+            gridAdjustment: 'responsive',
+            mediaQueries: [{
+                width: 1500,
+                cols: 3
+            }, {
+                width: 1100,
+                cols: 3
+            }, {
+                width: 480,
+                cols: 2
+            }, {
+                width: 320,
+                cols: 1
+            }],
+        });
+        var gridContainer = $('#grid-container'),
+            filtersContainer = $('#filters-container');
+        filtersContainer.on('click', '.cbp-filter-item', function(e) {
+
+            var me = $(this),
+                wrap;
+
+            // get cubeportfolio data and check if is still animating (reposition) the items.
+            if (!$.data(gridContainer[0], 'cubeportfolio').isAnimating) {
+
+                if (filtersContainer.hasClass('cbp-l-filters-dropdown')) {
+                    wrap = $('.cbp-l-filters-dropdownWrap');
+
+                    wrap.find('.cbp-filter-item').removeClass('cbp-filter-item-active');
+
+                    wrap.find('.cbp-l-filters-dropdownHeader').text(me.text());
+
+                    me.addClass('cbp-filter-item-active');
+                } else {
+                    me.addClass('cbp-filter-item-active').siblings().removeClass('cbp-filter-item-active');
+                }
+
+            }
+
+            // filter the items
+            gridContainer.cubeportfolio('filter', me.data('filter'), function() {});
+
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        $(window).on('load', function() {
+
+        })
+        $(window).scroll(function(event) {
+            var st = $(this).scrollTop();
+            if (st > 25) {
+                $('.home').removeClass('header-show');
+            } else {
+                $('.img1').animate({
+                    bottom: '-20%',
+                }, 1500);
+                $('.img2').animate({
+                    opacity: 1,
+                }, 1000);
+                $('.home').addClass('header-show');
+            }
+        })
+    </script>
+</body>
+
+</html>
